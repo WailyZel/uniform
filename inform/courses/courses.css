@@ -1,0 +1,244 @@
+/* Стили для страниц курсов */
+
+/* Hero секция курса */
+.course-hero {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.course-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.course-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+/* Основной контент курса */
+.course-content {
+    padding: 60px 0;
+}
+
+.course-content .container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+}
+
+/* Боковая панель */
+.course-sidebar {
+    background-color: #f8f8f8;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.course-sidebar h3 {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.course-sidebar ul {
+    margin-bottom: 30px;
+}
+
+.course-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.course-sidebar ul li a {
+    display: block;
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    color: var(--dark-color);
+}
+
+.course-sidebar ul li a:hover,
+.course-sidebar ul li.active a {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.course-sidebar ul li.active a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.sidebar-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar-card h4 {
+    margin-bottom: 10px;
+}
+
+.sidebar-card p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Основная часть со статьей */
+.course-main {
+    max-width: 800px;
+}
+
+.breadcrumbs {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.breadcrumbs a {
+    color: #666;
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary-color);
+}
+
+article h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+article p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    font-size: 24px;
+    margin: 30px 0 20px;
+    color: var(--dark-color);
+}
+
+/* Информация о курсе */
+.course-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.info-item {
+    background-color: #f8f8f8;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: center;
+}
+
+.info-item i {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.info-item h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-item p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+/* Списки курсов */
+.course-list {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.course-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.course-list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Превью урока */
+.lesson-preview {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+
+.lesson-preview h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.lesson-preview p {
+    margin-bottom: 15px;
+}
+
+.lesson-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.lesson-meta i {
+    margin-right: 5px;
+}
+
+.btn-center {
+    display: block;
+    margin: 40px auto 0;
+    max-width: 250px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 900px) {
+    .course-content .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-sidebar {
+        position: static;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .course-hero {
+        padding: 60px 0;
+    }
+    
+    .course-hero h1 {
+        font-size: 28px;
+    }
+    
+    .course-info {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -1,0 +1,284 @@
+/* Resource Pages Specific Styles */
+
+/* Hero Section */
+.resource-hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.resource-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.resource-hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Layout */
+.resource-content {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.resource-content .container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+}
+
+/* Sidebar */
+.resource-sidebar {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+}
+
+.resource-sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.resource-sidebar ul {
+    margin-bottom: 30px;
+}
+
+.resource-sidebar ul li {
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.resource-sidebar ul li a {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.resource-sidebar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.resource-sidebar ul li.active a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.sidebar-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 30px;
+}
+
+.sidebar-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Main Content */
+.resource-main {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumbs a {
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumbs span {
+    color: var(--text-color);
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+article h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+article h3 {
+    font-size: 22px;
+    margin: 30px 0 15px;
+    color: var(--dark-color);
+}
+
+article p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Resource Links Section */
+.resource-links-section {
+    margin: 25px 0 35px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+}
+
+.resource-links-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.resource-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.resource-links li {
+    background-color: white;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.resource-links li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resource-links li a {
+    display: block;
+    padding: 15px;
+    color: var(--text-color);
+}
+
+.resource-links li a i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.resource-links li a span {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.resource-links li a p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Downloads Section */
+.resource-downloads {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    margin-top: 40px;
+}
+
+.resource-downloads h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.resource-downloads ul li {
+    margin-bottom: 15px;
+}
+
+.resource-downloads ul li:last-child {
+    margin-bottom: 0;
+}
+
+.resource-downloads ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.resource-downloads ul li a:hover {
+    background-color: #f0f7ff;
+}
+
+.resource-downloads ul li a i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--primary-color);
+}
+
+.resource-downloads ul li a span {
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .resource-content .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-sidebar {
+        position: static;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resource-hero {
+        padding: 40px 0;
+    }
+    
+    .resource-hero h1 {
+        font-size: 28px;
+    }
+    
+    .resource-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-main {
+        padding: 20px;
+    }
+    
+    article h2 {
+        font-size: 24px;
+    }
+    
+    article h3 {
+        font-size: 20px;
+    }
+} 

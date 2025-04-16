@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы веб-разработки | UniForm</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">Uni<span>Form</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../index.html#resources">Ресурсы</a></li>
+                    <li><a href="../index.html#courses">Курсы</a></li>
+                    <li><a href="../index.html#tools">Инструменты</a></li>
+                    <li><a href="../index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="course-hero">
+        <div class="container">
+            <h1>Основы веб-разработки</h1>
+            <p>HTML, CSS и JavaScript для создания первых веб-страниц</p>
+        </div>
+    </section>
+
+    <section class="course-content">
+        <div class="container">
+            <div class="course-sidebar">
+                <h3>Содержание курса</h3>
+                <ul>
+                    <li class="active"><a href="#overview">Обзор курса</a></li>
+                    <li><a href="#lesson1">Урок 1: Введение в веб-разработку</a></li>
+                    <li><a href="#lesson2">Урок 2: Основы HTML</a></li>
+                    <li><a href="#lesson3">Урок 3: Структура веб-страницы</a></li>
+                    <li><a href="#lesson4">Урок 4: Введение в CSS</a></li>
+                    <li><a href="#lesson5">Урок 5: Блочная модель и позиционирование</a></li>
+                    <li><a href="#lesson6">Урок 6: Flexbox и Grid</a></li>
+                    <li><a href="#lesson7">Урок 7: Введение в JavaScript</a></li>
+                    <li><a href="#lesson8">Урок 8: Работа с DOM</a></li>
+                    <li><a href="#lesson9">Урок 9: События и интерактивность</a></li>
+                    <li><a href="#lesson10">Урок 10: Финальный проект</a></li>
+                </ul>
+                <div class="sidebar-card">
+                    <h4>Нужна помощь?</h4>
+                    <p>Свяжитесь с нашей командой поддержки, если у вас возникли вопросы по курсу</p>
+                    <a href="../index.html#contact" class="btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="course-main">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Главная</a> &gt; 
+                    <a href="../index.html#courses">Курсы</a> &gt; 
+                    <span>Основы веб-разработки</span>
+                </div>
+
+                <article id="overview">
+                    <h2>Обзор курса Основы веб-разработки</h2>
+                    <p>Курс "Основы веб-разработки" позволит учащимся с нуля освоить технологии для создания современных веб-сайтов. Вы познакомитесь с тремя основными языками веб-разработки: HTML, CSS и JavaScript, и научитесь с их помощью создавать красивые и интерактивные веб-страницы.</p>
+                    
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Продолжительность</h4>
+                            <p>10 уроков (20 академических часов)</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Уровень</h4>
+                            <p>Начинающий</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Формат</h4>
+                            <p>Теория + практические задания</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Сертификат</h4>
+                            <p>По окончании курса</p>
+                        </div>
+                    </div>
+
+                    <h3>Для кого этот курс</h3>
+                    <ul class="course-list">
+                        <li>Школьники, интересующиеся созданием сайтов</li>
+                        <li>Учителя информатики, желающие обновить знания в области веб-технологий</li>
+                        <li>Начинающие разработчики без опыта</li>
+                        <li>Дизайнеры, желающие расширить свои навыки в веб-разработке</li>
+                    </ul>
+
+                    <h3>Чему вы научитесь</h3>
+                    <ul class="course-list">
+                        <li>Создавать структуру веб-страниц с помощью HTML</li>
+                        <li>Оформлять веб-страницы с помощью CSS</li>
+                        <li>Делать веб-сайты отзывчивыми и адаптивными</li>
+                        <li>Использовать современные методы верстки: Flexbox и Grid</li>
+                        <li>Добавлять интерактивность с помощью JavaScript</li>
+                        <li>Манипулировать элементами страницы и создавать динамический контент</li>
+                        <li>Размещать сайты в интернете</li>
+                    </ul>
+
+                    <h3>Программа курса</h3>
+                    <div class="lesson-preview" id="lesson1">
+                        <h4>Урок 1: Введение в веб-разработку</h4>
+                        <p>На первом уроке мы познакомимся с основными технологиями веб-разработки, узнаем как работает интернет, что такое сервер и клиент, как браузер отображает веб-страницы. Настроим рабочее окружение для разработки.</p>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-clock"></i> 2 часа</span>
+                            <span><i class="fas fa-tasks"></i> 2 задания</span>
+                        </div>
+                        <a href="#" class="btn-outline">Перейти к уроку</a>
+                    </div>
+
+                    <div class="lesson-preview" id="lesson2">
+                        <h4>Урок 2: Основы HTML</h4>
+                        <p>Изучим базовые теги HTML, научимся создавать различные элементы веб-страницы: заголовки, параграфы, списки, ссылки и изображения. Разберем атрибуты тегов и их использование.</p>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-clock"></i> 2 часа</span>
+                            <span><i class="fas fa-tasks"></i> 4 задания</span>
+                        </div>
+                        <a href="#" class="btn-outline">Перейти к уроку</a>
+                    </div>
+
+                    <div class="lesson-preview" id="lesson3">
+                        <h4>Урок 3: Структура веб-страницы</h4>
+                        <p>Научимся структурировать веб-страницы с помощью семантических тегов HTML5. Создадим макет страницы с шапкой, основной частью, боковой панелью и подвалом.</p>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-clock"></i> 2 часа</span>
+                            <span><i class="fas fa-tasks"></i> 3 задания</span>
+                        </div>
+                        <a href="#" class="btn-outline">Перейти к уроку</a>
+                    </div>
+
+                    <a href="#" class="btn btn-center">Записаться на курс</a>
+
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Uni<span>Form</span></h2>
+                    <p>Современные решения для преподавания информатики</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Ресурсы</h4>
+                        <ul>
+                            <li><a href="../resources/programming.html">Программирование</a></li>
+                            <li><a href="../resources/it.html">Информационные технологии</a></li>
+                            <li><a href="../resources/methodology.html">Методические материалы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Инструменты</h4>
+                        <ul>
+                            <li><a href="../tools/compiler.html">Онлайн-компилятор</a></li>
+                            <li><a href="../tools/test-creator.html">Конструктор тестов</a></li>
+                            <li><a href="../tools/virtual-board.html">Виртуальная доска</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <ul>
+                            <li><a href="../index.html#contact">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UniForm. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
